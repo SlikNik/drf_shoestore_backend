@@ -11,7 +11,7 @@ class ManufacturerViewSet(viewsets.ModelViewSet):
     """
     queryset = Manufacturer.objects.all()
     serializer_class = ManufacturerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+
 
 
 class ShoeViewSet(viewsets.ModelViewSet):
@@ -20,7 +20,7 @@ class ShoeViewSet(viewsets.ModelViewSet):
     """
     queryset = Shoe.objects.all()
     serializer_class = ShoeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+
 
 
 class ShoeTypeViewSet(viewsets.ModelViewSet):
@@ -29,7 +29,7 @@ class ShoeTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = ShoeType.objects.all()
     serializer_class = ShoeTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+
 
 class ShoeColorViewSet(viewsets.ModelViewSet):
     """
@@ -37,5 +37,5 @@ class ShoeColorViewSet(viewsets.ModelViewSet):
     """
     queryset = ShoeColor.objects.all()
     serializer_class = ShoeColorSerializer
-    permission_classes = [permissions.IsAuthenticated]
+
 
